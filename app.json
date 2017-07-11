@@ -6,40 +6,40 @@
   "env": {
     "AUTH_REQUIRED": "false",
     "CF_CALLBACK_URL": {
-      "required": true
+      "required": false
     },
     "CF_CLIENT_ID": {
-      "required": true
+      "required": false
     },
     "CF_CLIENT_SECRET": {
-      "required": true
+      "required": false
     },
     "COOKIE_SECRET": {
-      "required": true
+      "required": false
     },
     "LOG_LEVEL": {
-      "required": true
+      "required": false
     },
     "NEW_RELIC_LICENSE_KEY": {
-      "required": true
+      "required": false
     },
     "NEW_RELIC_LOG": {
-      "required": true
+      "required": false
     },
     "PAPERTRAIL_API_TOKEN": {
-      "required": true
+      "required": false
     },
     "REDIS_URL": {
-      "required": true
+      "required": false
     },
     "SF_AUTHORIZE_URL": {
-      "required": true
+      "required": false
     },
     "SF_TOKEN_URL": {
-      "required": true
+      "required": false
     },
     "NODE_ENV": {
-      "required": true
+      "required": false
     },
   },
   "formation": {
