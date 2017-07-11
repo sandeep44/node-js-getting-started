@@ -59,7 +59,7 @@ module.exports = function auth(app) {
       });
 
       app.get('/', (req, res) => {
-        if ((!req.user) && (AUTH_REQUIRED === 'true')) {
+        if ((!req.user) && (AUTH_REQUIRED === 'false')) {
           req.session.destroy();
           req.logout();
           return res.redirect('/auth/forcedotcom');

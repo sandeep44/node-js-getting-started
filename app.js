@@ -5,7 +5,7 @@ const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const compression = require('compression');
-const authenticatedRoutes = require('./lib/routes/authenticated-routes');
+//const authenticatedRoutes = require('./lib/routes/authenticated-routes');
 
 const app = express();
 
@@ -43,7 +43,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'lib/public')));
 
 // Load authenticated routes
-app.use('/', authenticatedRoutes);
+//app.use('/', authenticatedRoutes);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

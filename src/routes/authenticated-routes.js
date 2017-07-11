@@ -7,7 +7,7 @@ import testFile from '../server-controllers/test';
 const router = express.Router();
 
 // Controls whether this web app will require authentication and authorization.
-const AUTH_REQUIRED = (process.env.AUTH_REQUIRED === 'true');
+const AUTH_REQUIRED = (process.env.AUTH_REQUIRED === 'false');
 
 // middleware that is specific to this router
 router.use((req, res, next) => {
