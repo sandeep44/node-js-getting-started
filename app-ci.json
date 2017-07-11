@@ -1,0 +1,43 @@
+{
+  "name": "Cirris_Web_Accelerator",
+  "description": "This is a Node Web Accelerator that allows project teams to get up and running with a Node project quicker then starting from scratch.",
+  "keywords": [
+      "Node.JS",
+      "JavaScript",
+      "ES6",
+      "Sass",
+      "Browersify",
+      "Gulp"
+  ],
+  "website": "https://es6-web-accelerator.herokuapp.com",
+  "repository": "https://github.com/EliLillyCo/CIRR_WEB_ACCELERATOR",
+  "success_url": "/",
+  "scripts": {
+      "test": "npm test"
+  },
+  "env": {
+      "API_TOKEN": {
+          "required": true
+      },
+      "GITHUB_USERNAME": {
+          "required": true
+      }
+  },
+  "formation": {
+      "web": {
+          "quantity": "2",
+          "size": "Performance-M"
+      }
+  },
+  "image": "heroku/nodejs",
+  "addons": [
+      "newrelic",
+      "papertrail",
+      "heroku-redis"
+  ],
+  "buildpacks": [
+      {
+          "url": "heroku/nodejs"
+      }
+  ]
+}
